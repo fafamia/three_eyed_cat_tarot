@@ -239,7 +239,7 @@ let data = [
     },
     {
         name: '四葉草香氛蠟燭',
-        img: 'imgs/product34.jpg',
+        img: 'imgs/product35.jpg',
         info: '以四葉草為靈感，散發清新幸運香氣，營造溫馨愉悅的氛圍。',
         price: '600',
         class: '香氛'

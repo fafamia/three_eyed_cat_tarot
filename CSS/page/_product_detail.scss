@@ -1,0 +1,223 @@
+.item-pics-list-phone {
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .item-pic {
+        height: 100%;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            vertical-align: middle;
+            border-radius: 10px;
+        }
+    }
+
+    @media (width>=768px) {
+        display: none;
+    }
+}
+
+.l-product-detail-pic-pc {
+    height: 520px;
+    display: none;
+
+    .item-pics-list-pc {
+        height: 100%;
+    }
+
+    @media (width>=768px) {
+        display: block;
+    }
+}
+
+.detail-pics-small-area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    .detail-pics-small-list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .pic-small {
+            width: 100%;
+            height: 15%;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: .3s;
+                }
+
+            }
+        }
+
+    }
+
+    .arrow-top,
+    .arrow-bottom {
+        height: 5%;
+
+        i {
+            font-size: $text-s;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-darkgray;
+            }
+        }
+    }
+
+}
+
+.detail-pic-large {
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+
+    a {
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        color: $color-lightgray;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.detail-text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        font-size: $text-l;
+    }
+
+    h3 {
+        font-size: $text-s;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    .price {
+        font-size: $text-l;
+        font-weight: bold;
+    }
+
+    .counter {
+
+        button {
+            background-color: #fff;
+            border: 1px solid $color-lightgray;
+            padding: 6px 10px;
+            font-size: $text-m;
+        }
+
+        .minus-btn {
+            border-radius: 5px 0 0 5px;
+            width: 10%;
+            color: $color-lightgray;
+        }
+
+        .add-btn {
+            border-radius: 0 5px 5px 0;
+            width: 10%;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        input {
+            font-size: $text-m;
+            font-weight: bold;
+            padding: 6px 10px;
+            border: 1px solid $color-lightgray;
+            outline: none;
+            width: 30%;
+        }
+    }
+
+    .detail-btn {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        @media (width>=768px) {
+            font-size: $text-s;
+        }
+
+        a,
+        input {
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            width: 50%;
+        }
+
+        .add-cart {
+            background-color: $color-third;
+            color: #fff;
+
+
+            &:hover {
+                background-color: darken($color-third, 10%);
+            }
+        }
+
+        .order-now {
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            cursor: pointer;
+
+            @media (width>=768px) {
+                font-size: $text-s;
+            }
+        }
+    }
+}
+
+.desciption-product {
+
+    h2 {
+        text-align: center;
+        font-size: $text-m;
+        border-bottom: 1px solid $color-lightgray;
+    }
+
+    .desciption-text {
+        padding: 0 8.333333%;
+    }
+}

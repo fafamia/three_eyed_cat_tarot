@@ -1,0 +1,24 @@
+@import "variable";
+@import "reset";
+@import "grid";
+@import "base";
+@import "component";
+
+//header&footer
+@import "layout";
+
+//page
+@import "page/index";
+@import "page/divination_service";
+@import "page/reserve";
+@import "page/products";
+@import "page/product_detail";
+@import "page/pick_card_online";
+@import "page/faq";
+@import "page/news";
+@import "page/article";
+@import "page/about_us";
+@import "page/article_detail";
+@import "page/news_detail";
+@import "page/team";
+@import "page/shopping_cart";

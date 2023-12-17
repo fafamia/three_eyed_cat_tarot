@@ -1,0 +1,127 @@
+<div class="header-phone">
+    <div class="header container">
+        <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="三眼貓塔羅" class="mr-8"></a>
+            <a href="index.html">
+                <h1>三眼貓塔羅</h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu-list">
+                <li class="mr-16"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <li class="mr-16"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-list-list" style="display: none;">
+        <nav class="list-phone container">
+            <ul>
+                <li class="mb-8"><a href="#">占卜服務</a></li>
+                <li class="mb-8"><a href="#">預約占卜</a></li>
+                <li class="mb-8"><a href="#">魔法小舖</a></li>
+                <li class="mb-8"><a href="#">線上抽牌</a></li>
+                <li class="mb-8"><a href="#">團隊介紹</a></li>
+                <li class="mb-8"><a href="#">最新消息</a></li>
+                <li class="mb-8"><a href="#">常見問題</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="header-pc">
+    <div class="header container">
+        <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="三眼貓塔羅" class="mr-8"></a>
+            <a href="index.html">
+                <h1>三眼貓塔羅</h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="divination_service.html">占卜服務</a></li>
+                <li><a href="reserve.html">預約占卜</a></li>
+                <li><a href="products.html">魔法小舖</a></li>
+                <li><a href="pick_card_online.html">線上抽牌</a></li>
+                <li><a href="team.html">團隊介紹</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+                <li><a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li><a href="#" class="log-in" id="log-in">登入</a></li>
+                <li><a href="#" class="btn sign-up" id="sign-up">免費註冊</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="log-in-modal" id="log-in-modal" style="display: none;">
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="member-text">
+                <h3 class="mb-8">會員登入</h3>
+                <form action="/login" method="post">
+                    <label for="login" class="close"><i class="fa-solid fa-xmark" id="close-ntn"></i></label>
+                    <input class="mb-20" type="email" placeholder="請輸入E-mail" id="loginEmail" required>
+                    <div class="password mb-20">
+                        <input type="password" placeholder="請輸入密碼" id="loginPassword" required>
+                        <span class="eye"><i class="fa-solid fa-eye-slash"></i></span>
+                    </div>
+                    <div class="check-num mb-20">
+                        <input type="text" placeholder="請輸入右側驗證碼" id="loginNum" required><span class="num"
+                            id="num"></span><a href="#"><i class="fa-solid fa-rotate-right" id="again"></i></a>
+                    </div>
+                    <input type="submit" class="member-btn mb-8" value="登入" id="submit-login"></input>
+                </form>
+                <input class="keep-login mb-20" type="checkbox" id="keep-log-in"><label for="keep-log-in">保持登入狀態</label>
+                <div class="orther-way">
+                    <h4 class="mb-20">或其他方式快速登入</h4>
+                    <div class="fast-img mb-20">
+                        <a href="#"><img src="imgs/facebook.png" alt="facebook_login"></a>
+                        <a href="#"><img src="imgs/google.png" alt="google_login"></a>
+                        <a href="#"><img src="imgs/line.png" alt="line_login"></a>
+                        <a href="#"><img src="imgs/instagram.png" alt="instagram_login"></a>
+                    </div>
+                </div>
+                <div class="bottom-btn">
+                    <a href="#">免費註冊</a>
+                    <span> | </span>
+                    <a href="#">忘記密碼</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sign-up-modal" id="sign-up-modal" style="display: none;">
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="member-text">
+                <h3 class="mb-8">會員註冊</h3>
+                <form action="/login" method="post">
+                    <label for="signup" class="close"><i class="fa-solid fa-xmark" id="close-modal"></i></label>
+                    <input class="mb-20" type="email" placeholder="請輸入E-mail" required>
+                    <div class="password mb-20">
+                        <input type="password" placeholder="請輸入密碼(6-20碼，英數字特殊符號組成)" id="s-password1" required>
+                        <span class="eye"><i class="fa-solid fa-eye-slash" id="signup-eye1"></i></span>
+                    </div>
+                    <div class="password mb-20">
+                        <input type="password" placeholder="請再次確認密碼" id="s-password2" required>
+                        <span class="eye"><i class="fa-solid fa-eye-slash" id="signup-eye2"></i></span>
+                    </div>
+                    <div class="check-num mb-20">
+                        <input type="text" placeholder="請輸入右側驗證碼" required><span class="num" id="signup-num"></span><a
+                            href="#"><i class="fa-solid fa-rotate-right" id="signup-again"></i></a>
+                    </div>
+                    <a href="#" class="member-btn mb-20">註冊</a>
+                </form>
+                <div class="orther-way">
+                    <h4 class="mb-20">或其他方式快速註冊</h4>
+                    <div class="fast-img">
+                        <a href="#"><img src="imgs/facebook.png" alt="facebook_login"></a>
+                        <a href="#"><img src="imgs/google.png" alt="google_login"></a>
+                        <a href="#"><img src="imgs/line.png" alt="line_login"></a>
+                        <a href="#"><img src="imgs/instagram.png" alt="instagram_login"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

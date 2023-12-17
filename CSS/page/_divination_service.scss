@@ -1,0 +1,56 @@
+.divination-card-p {
+    align-items: center;
+
+    .divination-card-img-p {
+        height: 300px;
+        margin-bottom: 8px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .divination-card-text-p {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 20px;
+
+        h3 {
+            font-size: $text-xl;
+        }
+
+        p {
+            font-size: $text-s;
+            margin-bottom: 20px;
+        }
+
+        .order-now {
+
+            a {
+                color: #fff;
+                font-size: $text-s;
+                padding: 0.5rem 2.5rem;
+            }
+        }
+    }
+}
+
+
+@media (width>=768px) {
+    .divination-card-p {
+        padding: 0 10px;
+
+        .divination-card-img-p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .change-order {
+            order: -1;
+        }
+    }
+}

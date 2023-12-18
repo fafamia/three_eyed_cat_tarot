@@ -2471,6 +2471,11 @@ header .header {
 .desciption-product .desciption-text {
   padding: 0 8.333333%;
 }
+.desciption-product .desciption-text ul {
+  list-style: decimal;
+  list-style-position: outside;
+  padding-left: 22px;
+}
 
 .pick-card {
   background-image: url(../imgs/wall4.webp);

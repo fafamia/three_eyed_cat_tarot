@@ -232,5 +232,11 @@
 
     .desciption-text {
         padding: 0 8.333333%;
+
+        ul {
+            list-style: decimal;
+            list-style-position: outside;
+            padding-left: 22px;
+        }
     }
 }

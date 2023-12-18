@@ -1,7 +1,12 @@
+.phoneList {
+    overflow: hidden;
+}
+
 .item-pics-list-phone {
+    height: 300px;
     flex-wrap: nowrap;
     margin-bottom: 20px;
-    overflow: hidden;
+    position: relative;
 
     .item-pic {
         height: 100%;
@@ -35,6 +40,10 @@
     }
 }
 
+.list {
+    overflow: hidden;
+}
+
 .detail-pics-small-area {
     height: 100%;
     display: flex;
@@ -47,8 +56,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-wrap: nowrap;
+        row-gap: 8px;
+        position: relative;
 
         .pic-small {
+            flex-shrink: 0;
             width: 100%;
             height: 15%;
             border-radius: 5px;
@@ -88,6 +101,7 @@
 
 .detail-pic-large {
     position: relative;
+    height: 100%;
 
     img {
         height: 100%;
@@ -142,12 +156,7 @@
             font-size: $text-m;
         }
 
-        .minus-btn {
-            border-radius: 5px 0 0 5px;
-            width: 10%;
-            color: $color-lightgray;
-        }
-
+        .minus-btn,
         .add-btn {
             border-radius: 0 5px 5px 0;
             width: 10%;
@@ -156,6 +165,10 @@
             &:hover {
                 color: $color-primary;
             }
+        }
+
+        .minus-btn {
+            border-radius: 5px 0 0 5px;
         }
 
         input {

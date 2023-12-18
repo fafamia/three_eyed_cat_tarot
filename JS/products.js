@@ -360,7 +360,7 @@ function render(data, page = 1) {
     //組字串
     let str = '';
     slicedData.forEach(function (products) {
-        str += `<a href="#" class=" col-6 col-md-3 mb-20">
+        str += `<a href="product_detail.html" class=" col-6 col-md-3 mb-20">
         <div class="l-card-product">
             <div class="l-card-pic"><img src="${products.img}" alt="${products.name}"></div>
             <div class="l-card-text">
